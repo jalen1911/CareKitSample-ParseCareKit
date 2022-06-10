@@ -30,12 +30,12 @@ struct LoginView: View {
 
         VStack {
 
-            Text("CareKit Sample App")
+            Text("Red Flag")
                 .font(.largeTitle) // These are modifiers of the text view
                 .foregroundColor(.white)
                 .padding([.top], 40)
 
-            Image("exercise.jpg") // Change this image to something that represents your application
+            Image("redflag.png") // Change this image to something that represents your application
                 .resizable()
                 .frame(width: 150, height: 150, alignment: .center)
                 .clipShape(Circle())
@@ -153,8 +153,8 @@ struct LoginView: View {
             UISegmentedControl.appearance().selectedSegmentTintColor = .blue
             UISegmentedControl.appearance().backgroundColor = .lightGray
         })
-        .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.06253327429, green: 0.6597633362, blue: 0.8644603491, alpha: 1)),
-                                                               Color(#colorLiteral(red: 0, green: 0.2858072221, blue: 0.6897063851, alpha: 1))]),
+        .background(LinearGradient(gradient: Gradient(colors: [.red,
+                                                               .green]),
                                    startPoint: .top,
                                    endPoint: .bottom))
         .edgesIgnoringSafeArea(.all)
